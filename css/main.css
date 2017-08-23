@@ -89,12 +89,12 @@ header #search:-moz-input-placeholder {
 #content #thumb-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   alig-content: stretch;
 }
 #content #thumb-container img {
   flex-grow: 1;
-  max-width: 100px;
-  max-height: 150px;
+  max-width: 100%;
   cursor: pointer;
 }
 #content #thumb-container img:hover {
@@ -107,6 +107,33 @@ h3 {
 }
 #byweek {
   border-left: 1px solid #808080;
+}
+@media only screen and (max-width: 40em) {
+  p,
+  a,
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    margin: 30px 0 40px 0;
+  }
+  #view-all {
+    width: 100%;
+  }
+  #byweek {
+    border-left: 0;
+  }
+  .pad {
+    padding: 1.2em;
+  }
+  canvas {
+    height: 100%;
+  }
 }
 @-moz-keyframes enlarge {
   0% {
