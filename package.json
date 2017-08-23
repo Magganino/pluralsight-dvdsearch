@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "chart.js": "^2.6.0",
-    "foundation-sites": "^6.4.3"
+    "foundation-sites": "6.3.0"
   }
 }

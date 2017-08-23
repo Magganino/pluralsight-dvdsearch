@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-  <link media="all" type="text/css" rel="stylesheet" href="/node_modules/foundation-sites/dist/css/foundation-float.min.css">
+  <link media="all" type="text/css" rel="stylesheet" href="/node_modules/foundation-sites/dist/css/foundation-flex.min.css">
   <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
 
   <script src="/node_modules/chart.js/dist/Chart.js"></script>
@@ -23,12 +23,12 @@
   <div class="row">
     <div id="content">
       <div class="row pad">
-        <div class="small-6 columns">
+        <div class="columns">
           <h1>Hollywood Titles</h1>
           <p class="subtitle">Latest releases</p>
         </div>
-        <div class="small-6 columns">
-          <a href="#" class="btn" id="view-all>">View all releases</a>
+        <div class="columns">
+          <a href="#" class="btn" id="view-all">View all releases</a>
         </div>
       </div>
 
@@ -59,7 +59,7 @@
               landjaeger pork belly.
             </p>
         </div>
-        <div class="small-6 columns">
+        <div class="small-6 columns" id="byweek">
           <h3>DVD Releases by Week</h3>
 
           <canvas id="myChart" width="400" height="250"></canvas>
@@ -73,7 +73,7 @@
                   label: '# of releases',
                   data: [12, 19, 3, 5, 2, 3],
                   borderColor: [
-                    '#67d2f4'
+                    '#8838ff'
                   ],
                   borderWidth: 3
                 }]

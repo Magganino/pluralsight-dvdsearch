@@ -1,0 +1,115 @@
+// Variables
+
+site-bg = #8a9296
+bgcolor = #2b2e2f
+search-color = #7f7f7f
+title-color = white
+paragraph-color = #909090
+accent-color = #8838ff
+
+// Mixins
+
+border-radius(n)
+    border-radius n
+    -webkit-border-radius n
+    -moz-border-radius n
+
+placeholder(color)
+    &::-webkit-input-placeholder
+        color search-color
+    &::-moz-input-placeholder
+        color search-color
+    &:-ms-input-placeholder
+        color search-color
+    &:-moz-input-placeholder
+        color search-color
+
+h1, h2, h3, p, a    
+    font-family Raleway
+
+h1, h2, h3  
+    color title-color
+
+h2, h3  
+    font-size 1.4em
+p
+    color paragraph-color
+
+.pad
+    padding 3em
+
+body
+    background-color site-bg
+    padding-top 6em 
+
+header
+    background-color black
+    width 100%
+    padding 20px
+
+    img
+        width 24px
+        height 24px
+        cursor pointer
+
+    #search
+        background bgcolor
+        border 0 
+        color search-color
+        display inline-block
+        width 200px
+        height 25px
+        float right 
+        font-size .95em
+        margin-bottom 0
+        border-radius(15px)
+        placeholder(gray)
+
+#content
+    background bgcolor
+
+    h1
+        font-weight 300
+        font-size 2em
+        margin 0
+
+    .btn
+        color white
+        padding 7px 35px
+        border-radius 3px
+        position relative
+        top 50%
+        transform translateY(-50%)
+        &:hover
+            color white
+            font-weight bold
+
+    #view-all
+        background-color accent-color
+        float right
+
+    #thumb-container
+        display flex
+        flex-direction row
+        alig-content stretch 
+
+        img
+            flex-grow 1
+            max-width 100px
+            max-height 150px
+            cursor pointer
+
+            &:hover
+                animation enlarge .3s forwards
+
+@keyframes enlarge
+    0% {transform: scale(1)}
+    40% {transform: scale(1.15)}
+    100% {transform: scale(1.05)}
+
+h2, h3
+    font-weight 300
+    margin-bottom 25px
+
+#byweek
+    border-left 1px solid grey
